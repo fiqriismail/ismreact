@@ -1,21 +1,10 @@
 import React from 'react';
 
-function getStatusStyle(status) {
-  switch (status) {
-    case 'In Progress':
-      return 'orange';
-    case 'Completed':
-      return 'green';
-    case 'Cancelled':
-      return 'red';
-    default:
-      break;
-  }
-}
-
 function TodoItem(props) {
+  const styles = ['black', 'blue', 'green', 'red'];
+
   return (
-    <li style={{ color: getStatusStyle(props.status) }}>
+    <li style={{ color: styles[props.status] }}>
       {props.title} - {props.status} - Created: {props.created} by {props.owner}
     </li>
   );
