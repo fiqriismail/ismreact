@@ -15,6 +15,11 @@ function TodoItem(props) {
       <small>
         Created: {props.created} by {props.owner}
       </small>
+      <img
+        src="https://randomuser.me/api/portraits/med/women/47.jpg"
+        className="float-right rounded-circle"
+        alt="Owner"
+      />
     </li>
   );
 }
